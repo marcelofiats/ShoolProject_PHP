@@ -1,0 +1,425 @@
+@charset "utf-8";
+
+body{
+    background-color: rgb(76, 76, 126);
+    
+}
+
+ #principal{
+    margin-top: 3%;
+    margin-left: 22%;
+    padding: 1px 0% 0% 1%;
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+    width: 60%;
+    height: 800px;
+}
+
+h1{
+    font-size: 30pt;
+}
+
+
+#menu{
+    top: 6%;
+    left: 0%;
+    border-radius: 15px;
+    position: absolute;
+    width: 20%;
+    
+}
+
+#check{
+    display: none;
+}
+
+#icone{
+    cursor: pointer;
+    z-index: 1;
+    margin-top: 10%;
+    left: 10%;
+    position: absolute;
+}
+#sair{
+    position: absolute;
+    top: 90px;
+    right: 30px;
+    font-size: 14pt;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.barra{
+    padding-top: 75px;
+    background-color: rgb(139, 131, 189);
+    width: 100%;
+    height:100%;
+    border-radius: 15px;
+    transition: all .2s linear;
+    
+}
+
+#check:checked ~ .barra{
+    
+    transform: translatex(-98%);
+    transition: all .2s linear;
+}
+
+#box{
+    display: none;
+}
+   
+#menu1{
+    
+    cursor: pointer;
+    margin-left: 0px;
+    margin-bottom: 2px;
+    padding: 5px 0px 5px 10px;
+    background-color: rgb(195, 195, 224);
+    font: menu;
+    font-size: 18pt;
+}
+
+#menu1:hover{
+    background-color: rgb(118, 118, 122);
+    transition: .4s;
+}
+
+#aluno{
+    
+    font-size: 0pt;
+    transition: all .2s linear;
+}
+
+#box:checked ~ #aluno{
+    font-size: 0pt;
+    margin-left: -35px;
+    margin-bottom: 5px;
+    padding: 0px 0px 5px 12px;
+    font-size: 14pt;
+}
+
+ /* menu 2 consultar*/
+
+#cons{
+    display: none;
+}
+
+#menu2{
+    cursor: pointer;
+    margin-left: -20px;
+    padding: 0px 0px 0px 20px;
+    margin-top: 2%;
+    background-color: rgb(195, 195, 224);
+
+}
+
+#menu2:hover{
+    background-color: rgb(119, 117, 145);
+    transition: .4s;
+}
+
+#consulta{
+    font-size: 0pt;
+    transition: .4s;
+    margin-left: -150px;
+    padding-left: -40px;
+    background-color: rgb(195, 195, 224);
+}
+
+#cons:checked ~ #consulta{
+    font-size: 12pt;
+    padding: 0px 0px 0px 35px;
+    margin-left: -50px ;
+    transition: .4s;
+    
+}
+
+#cons:checked ~ #consulta li{
+    list-style: none;
+    text-decoration: none;
+    margin-left: -40px;
+    padding: 4px 0px 4px 40px;
+    margin-bottom: 3px;
+     
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: rgb(119, 117, 145);
+    transition: .4s;
+}
+
+#del{
+    display: none;
+}
+
+#cad{
+    display: none;
+}
+
+#alt{
+    display: none;
+}
+
+#menu3{
+    cursor: pointer;
+    margin-left: -20px;
+    padding: 0px 0px 0px 20px;
+    margin-top: 2%;
+    background-color: rgb(195, 195, 224);
+
+}
+
+#menu3:hover{
+    background-color: rgb(119, 117, 145);
+    transition: .4s;
+}
+
+#menu4{
+    cursor: pointer;
+    margin-left: -20px;
+    padding: 0px 0px 0px 20px;
+    margin-top: 2%;
+    background-color: rgb(195, 195, 224);
+
+}
+
+#menu4:hover{
+    background-color: rgb(119, 117, 145);
+    transition: .4s;
+}
+
+#menu5{
+    cursor: pointer;
+    margin-left: -20px;
+    padding: 0px 0px 0px 20px;
+    margin-top: 2%;
+    background-color: rgb(195, 195, 224);
+   
+}
+
+#menu5:hover{
+    background-color: rgb(119, 117, 145);
+    transition: .4s;
+}
+
+#deletar{
+    margin-left: -20px;
+    padding: 0px 0px 0px 35px;
+    font-size: 0pt;
+    transition: .4s;
+    background-color: rgb(195, 195, 224);
+
+}
+
+#del:checked ~ #deletar{
+    font-size: 12pt;
+    margin-left: -20px;
+    padding: 0px 0px 0px 35px;
+    transition: .4s;
+}
+
+#del:checked ~ #deletar li{
+    list-style: none;
+    margin-left: -80px;
+    padding: 5px 0px 5px 40px;
+    margin-bottom: 3px;
+
+}
+
+    /* Menu professor */
+
+    #boxp{
+        display: none;
+    }
+
+    #menup1{
+    
+        cursor: pointer;
+        margin-left: 0px;
+        margin-bottom: 2px;
+        padding: 5px 0px 5px 10px;
+        background-color: rgb(195, 195, 224);
+        font: menu;
+        font-size: 18pt;
+    }
+    
+    #menup1:hover{
+        background-color: rgb(118, 118, 122);
+        transition: .4s;
+    }
+    
+    #professor{
+        margin-left: -40px;
+        font-size: 0pt;
+        transition: all .2s linear;
+    }
+    
+    #boxp:checked ~ #professor{
+        font-size: 0pt;
+        margin-bottom: 10px;
+        padding: 0px 0px 5px 20px;
+        font-size: 14pt;
+    }
+    
+     /* menu 2 consultar*/
+    
+    #consp{
+        display: none;
+    }
+    
+    #menup2{
+        cursor: pointer;
+        margin-left: -20px;
+        padding: 0px 0px 0px 20px;
+        margin-top: 2%;
+        background-color: rgb(195, 195, 224);
+    
+    }
+    
+    #menup2:hover{
+        background-color: rgb(119, 117, 145);
+        transition: .4s;
+    }
+    
+    #consultap{
+        font-size: 0pt;
+        transition: .4s;
+        margin-left: -20px;
+        background-color: rgb(195, 195, 224);
+    }
+    
+    #consp:checked ~ #consultap{
+        font-size: 12pt;
+        padding: 0px 0px 0px 50px;
+        transition: .4s;
+        
+    }
+    
+    #consp:checked ~ #consultap li{
+        margin-left: -90px;
+        padding: 4px 0px 4px 40px;
+        margin-bottom: 3px;
+         
+    }
+    
+    li:hover{
+        background-color: rgb(119, 117, 145);
+        transition: .4s;
+    }
+    
+    #delp{
+        display: none;
+    }
+    
+    #cadp{
+        display: none;
+    }
+    
+    #altp{
+        display: none;
+    }
+    
+    #menup3{
+        cursor: pointer;
+        margin-left: -20px;
+        padding: 0px 0px 0px 20px;
+        margin-top: 2%;
+        background-color: rgb(195, 195, 224);
+    
+    }
+    
+    #menup3:hover{
+        background-color: rgb(119, 117, 145);
+        transition: .4s;
+    }
+    
+    #menup4{
+        cursor: pointer;
+        margin-left: -20px;
+        padding: 0px 0px 0px 20px;
+        margin-top: 2%;
+        background-color: rgb(195, 195, 224);
+    
+    }
+    
+    #menup4:hover{
+        background-color: rgb(119, 117, 145);
+        transition: .4s;
+    }
+    
+    #menup5{
+        cursor: pointer;
+        margin-left: -20px;
+        padding: 0px 0px 0px 20px;
+        margin-top: 2%;
+        background-color: rgb(195, 195, 224);
+       
+    }
+    
+    #menup5:hover{
+        background-color: rgb(119, 117, 145);
+        transition: .4s;
+    }
+    
+    #deletarp{
+        margin-left: -20px;
+        padding: 0px 0px 0px 35px;
+        font-size: 0pt;
+        transition: .4s;
+        background-color: rgb(195, 195, 224);
+    }
+    
+    #delp:checked ~ #deletarp{
+        font-size: 12pt;
+        margin-left: -20px;
+        padding: 0px 0px 0px 35px;
+        transition: .4s;
+    }
+    
+    #delp:checked ~ #deletarp li{
+        text-decoration: none;
+        margin-left: -75px;
+        padding: 5px 0px 5px 40px;
+        margin-bottom: 3px;
+    }
+
+    /*fim menus*/
+    footer#rodape{
+        clear: both;
+        border-top: 1px solid #606060;
+    }
+    footer#rodape p{
+        margin-top: 2px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    footer#rodape a{
+        color: blue;
+    }
+    footer#rodape a:hover{
+        text-decoration: underline;
+        color: black;
+        transition: 1s;
+    }
+
+    table{
+        width: 98%;
+        border-collapse: collapse;
+        font-size: 13pt;
+        border: 1 black solid;
+    }
+    
+    table th{
+        
+        padding: 5px 20px;
+    }
+
+    table td{
+        padding: 5px 20px;
+        border-top: 1 black solid;
+        border-collapse: collapse;
+    }

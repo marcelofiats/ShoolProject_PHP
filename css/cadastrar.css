@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+    p#usuario{
+        margin-left: -132px;
+    }
+
+    p#nasc{
+        margin-left: -155px;
+    }
+    p#senha{
+        margin-left: -62px;
+    }
+    p#repsenha{
+        margin-left: -110px;
+    }
+
+    P.obs{
+        margin-top: -15px;
+        margin-left: -40px;
+    }
+
+    h3{
+        margin-left: -60px;
+    }
+
+    p#rua{
+        margin-left: 160px;
+    }
+
+    p#cit{
+        margin-left: 92px;
+    }
+    p#cep{
+        margin-left: -105px;
+    }
+
+    p#comple{
+        margin-left: -50px;
+    }
+
+    p#materia{
+        margin-left: -80px;
+    }
