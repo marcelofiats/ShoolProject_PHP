@@ -2,7 +2,6 @@
 
 
 body{
-
 	font-family: arial, sens-serif;
 	color: #606060;
 	font-size: 20px;
@@ -90,12 +89,12 @@ nav#menu li:hover{
 form{
 	margin-bottom: 20px;
 }
-section#principal{
+.principal{
 	background-color: white;
 	display: block;
 	float: left;
 	width: 610px;
-	height: 1200px;
+	min-height: 900px;
 	border-right: 1px solid #606060;
 	padding-right: -10px;
 }

@@ -1,5 +1,5 @@
 <?php
-include 'PHP/conexao.php';
+include 'controller/conexao.php';
 
 ?>
 

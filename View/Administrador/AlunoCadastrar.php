@@ -1,4 +1,4 @@
-    <form action="../PHP/cadastroAluno.php" method="POST">
+    <form action="../controller/cadastroAluno.php" method="POST">
         <div>
             <p><h2>Cadastro de Aluno</h2></p>
 

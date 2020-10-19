@@ -6,22 +6,21 @@ if(isset($_SESSION['login'])){
 
     
 
-    include 'view/header.php';
-    include 'PHP/conexao.php';
+    include 'view/Administrador/header.php';
+    include 'Controller/conexao.php';
     @$pagina = $_GET['pagina'];
 
     switch($pagina){
-        case 'consnome': include 'view/CAlunoNome.php';break;
-        case 'consmat': include 'view/CAlunomat.php';break;
-        case 'aluno': include 'view/cadastrarAluno.php';break;
-        case 'alteraraluno': include 'view/AlterarAluno.php';break;
-        case 'delalunonome': include 'view/DeletarAlunoNome.php';break;
-        case 'delalunomat' : include 'view/DeletarAlunomat.php';break;
-        case 'nomealuno' : include 'PHP/consultar.php';break;
-        default: include 'view/home.php';break;
+        case 'consnome': include 'view/Administrador/AlunoLista.php';break;
+        case 'aluno': include 'view/Administrador/AlunoCadastrar.php';break;
+        case 'alteraraluno': include 'view/Administrador/AlunoAlterar.php';break;
+        case 'delalunonome': include 'view/Administrador/DeletarAlunoNome.php';break;
+        case 'delalunomat' : include 'view/Administrador/DeletarAlunomat.php';break;
+        case 'nomealuno' : include 'controller/consultar.php';break;
+        default: include 'view/Administrador/home.php';break;
     }
 
-    include 'view/footer.php';
+    include 'view/Administrador/footer.php';
 
 }
 else{
